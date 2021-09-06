@@ -1,0 +1,28 @@
+# 루트 Logger 방식이 아닌 각각의 Logger 방식으로 3가지 Logger를 선언
+log4j.logger.process.work1=DEBUG, WORK1
+log4j.logger.process.work2=DEBUG, WORK2
+log4j.logger.process.work3=DEBUG, WORK3
+ 
+# WORK1 Logger의 정보를 설정
+log4j.appender.WORK1=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.WORK1.File=work1.log
+log4j.appender.WORK1.DatePattern='.'yyyy-MM-dd
+log4j.appender.WORK1.Threshold=DEBUG
+log4j.appender.WORK1.layout=org.apache.log4j.PatternLayout
+log4j.appender.WORK1.layout.ConversionPattern=[%d] %-5p %l - %m%n
+ 
+# WORK2 Logger의 정보를 설정
+log4j.appender.WORK2=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.WORK2.File=work2.log
+log4j.appender.WORK2.DatePattern='.'yyyy-MM-dd
+log4j.appender.WORK2.Threshold=DEBUG
+log4j.appender.WORK2.layout=org.apache.log4j.PatternLayout
+log4j.appender.WORK2.layout.ConversionPattern=[%d] %-5p %l - %m%n
+ 
+# WORK3 Logger의 정보를 설정
+log4j.appender.WORK3=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.WORK3.File=work3.log
+log4j.appender.WORK3.DatePattern='.'yyyy-MM-dd
+log4j.appender.WORK3.Threshold=DEBUG
+log4j.appender.WORK3.layout=org.apache.log4j.PatternLayout
+log4j.appender.WORK3.layout.ConversionPattern=[%d] %-5p %l - %m%n

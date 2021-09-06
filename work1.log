@@ -1,0 +1,2 @@
+[2021-09-04 09:35:12,872] ERROR log4j.test.LoggerTest.main(LoggerTest.java:13) - Hello log4j.
+[2021-09-04 10:29:07,286] WARN  log4j.test.LoggerTest.main(LoggerTest.java:13) - Hello log4j.
